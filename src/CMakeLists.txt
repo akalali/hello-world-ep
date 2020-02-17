@@ -1,4 +1,15 @@
 #----------
+# Find external project
+#----------
+find_package(Poco COMPONENTS Foundation REQUIRED)
+
+if(Poco_FOUND)
+  message("Poco found in ${Poco_DIR}")
+else()
+  message (FATAL_ERROR "Cannot find Poco")
+endif()
+
+#----------
 # Add sub directories with local source code
 #----------
 add_subdirectory(app)
