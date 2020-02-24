@@ -6,14 +6,12 @@
 set(EP_BASE "${CMAKE_BINARY_DIR}/ep")
 set_property(DIRECTORY PROPERTY EP_BASE ${EP_BASE})
 
-#----------
 # Add external projects
-#----------
 include(ExternalProject)
 include(CMakeExternals/Poco.cmake)
 
-# Add local project as external project
-ExternalProject_Add (ep_Hello-World
+# Add custom external project to process inner build
+ExternalProject_Add(ConfigureBuild
   DEPENDS Poco
   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
   DOWNLOAD_COMMAND ""

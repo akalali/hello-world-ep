@@ -6,8 +6,7 @@ cmake_minimum_required(VERSION 3.14.5 FATAL_ERROR)
 # Set a default build type if none was specified
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug CACHE STRING
-    "Choose the type of build, options are: Debug Release, MinSizeRel, RelWithDebInfo."
-    FORCE)
+    "Choose the type of build, options are: Debug Release, MinSizeRel, RelWithDebInfo." FORCE)
   # Set the possible values of build type for cmake-gui
   set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS
     "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
