@@ -25,4 +25,7 @@ else()
   project(Hello-World VERSION 0.1.0 LANGUAGES CXX)
 endif()
 
+# Turn on using solution folders
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 add_subdirectory(src)
