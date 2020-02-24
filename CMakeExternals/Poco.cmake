@@ -4,7 +4,7 @@
 
 ExternalProject_Add(Poco
   GIT_REPOSITORY https://github.com/pocoproject/poco.git
-  GIT_TAG poco-1.9.4-release
+  GIT_TAG poco-1.10.1-release
   GIT_SHALLOW ON
   UPDATE_COMMAND ""
   INSTALL_COMMAND ""
